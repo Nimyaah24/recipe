@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="https://play-lh.googleusercontent.com/qX6vij2QSR9BaaGsOj50p9NSP7WviZtqZ3erAPSEFQ9fIPRSgyhFA_qm5cnAE_52Fgw=w240-h480-rw" alt="Logo" class="logo">
+        </div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="index.html#blogs">Blogs</a>
+            <a href="index.html#contact-us">Contact Us</a>
+        </div>
+    </nav>
+    <header>
+        <h1 style="color: white;">Add Recipe</h1>
+        <a href="index.html" class="btn" style="color: black;">Back to Recipes</a>
+    </header>
+    <main>
+        <form id="recipe-form">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required style="width: 90%;">
+            <label for="recipe-description">Description:</label>
+            <textarea id="recipe-description" name="description" required style="width: 90%;"></textarea>
+            <label for="recipe-ingredients">Ingredients:</label>
+            <textarea id="recipe-ingredients" name="ingredients" required style="width: 90%;"></textarea>
+            <label for="recipe-steps">Steps:</label>
+            <textarea id="recipe-steps" name="image" required style="width: 90%;"></textarea>
+            <label for="recipe-image">Image:</label>
+            <input type="file" id="recipe-image" accept="image/*" style="margin-left: 37%;">
+            <button type="submit" class="btn" style="width: 100px; color:black;">Submit</button>
+        </form>
+        <div id="success-message" style="display:none;">Recipe successfully uploaded!</div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
